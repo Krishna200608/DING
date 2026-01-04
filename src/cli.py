@@ -27,9 +27,9 @@ def parse_args():
     )
     init_parser.set_defaults(func=init)
 
-    hash_parser = commands.add_parser("hash")
+    hash_parser = commands.add_parser("hash", help="hashes the file and folders")
     hash_parser.add_argument(
-        "file", help="Hashes the file and stores the data in objects/"
+        "file", help="the file to be hashed"
     )
     hash_parser.set_defaults(func=hash_objects)
 
@@ -37,7 +37,7 @@ def parse_args():
 
 
 def main():
-    print("Ding Dong, who's there?\nThe IRS\nOh Shit")
+    print("Ding Dong, who's there?\nThe IRS\nOh Shit\n")
     args = parse_args()
     args.func(args)
 
