@@ -50,7 +50,6 @@ def parse_args():
 
 
 def main(): 
-    print("Ding Dong, who's there \nThe IRS \nOh Shit")
     args = parse_args()
     args.func(args)
 
