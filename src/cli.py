@@ -1,5 +1,6 @@
-#import argparse
-#from src import data
+import argparse
+from src import data
+
 
 def init(args):
     data.init(args.path)
@@ -33,13 +34,13 @@ def parse_args():
 
     ## hash
     hash_parser = commands.add_parser("hash", help="hashes and stores the file")
-    hash_parser.add_argument(
-        "file", help="the file to be hashed"
-    )
+    hash_parser.add_argument("file", help="the file to be hashed")
     hash_parser.set_defaults(func=hash_objects)
 
     ## cat-file
-    hash_parser = commands.add_parser("cat-file", help="prints out the uncompressed data")
+    hash_parser = commands.add_parser(
+        "cat-file", help="prints out the uncompressed data"
+    )
     hash_parser.add_argument(
         "hash", help="the hash (or start of hash) of file to decompress"
     )
@@ -49,9 +50,8 @@ def parse_args():
 
 
 def main():
-    print("Ding Dong, who's there?\nThe IRS\nOh Shit\n")
-    #args = parse_args()
-    #args.func(args)
+    args = parse_args()
+    args.func(args)
 
 
 if __name__ == "__main__":

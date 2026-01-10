@@ -52,7 +52,7 @@ def hash_objects(filename):
     if repo is None:
         print("error: not a ding repository")
         return
-    
+
     ding_path = os.path.join(repo, DING_DIR)
 
     objects_path = os.path.join(ding_path, "objects")
@@ -81,7 +81,7 @@ def decompress(search_hash):
     if repo is None:
         print("error: not a ding repository")
         return
-    
+
     ding_path = os.path.join(repo, DING_DIR)
 
     objects_path = os.path.join(ding_path, "objects")
@@ -99,7 +99,7 @@ def decompress(search_hash):
     if len(hashes) < 1:
         print("error: no file has been hashed yet")
         return
-    
+
     filtered = [hash for hash in hashes if hash.startswith(search_hash)]
 
     if len(filtered) < 1:
@@ -111,7 +111,7 @@ def decompress(search_hash):
         for hash in filtered:
             print(f"- {hash}")
         return
-    
+
     hash = filtered[0]
 
     print(f"Selected hash: {hash}\n")
@@ -120,3 +120,4 @@ def decompress(search_hash):
     with compression.zstd.open(full_path, "rb") as f:
         read_data = f.read()
     sys.stdout.buffer.write(read_data)
+
