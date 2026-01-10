@@ -49,7 +49,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def main(): 
+def main():
     args = parse_args()
     args.func(args)
 
