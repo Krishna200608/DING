@@ -1,25 +1,32 @@
-Setup for Ding:
-Ding is Git's twin written in python.
+# Setup for Ding
 
-To use Ding and enter Agartha:
+**Ding is Git's twin written in python.**
+
+## To use Ding and enter Agartha:
 You should have:
-Python 3.9+
-pip
-Git (to clone the repo)
- 
-Setup:
+- Python 3.14+
+- pip
+- Git (to clone the repo)
+
+## Setup
 git clone https://github.com/opencodeiiita/DING.git
 cd DING
 
-Setup a Virtual Environment:
+### To Setup a Virtual Environment
 python -m venv venv
-Windows: venv\Scripts\activate
-macOS/Linux: source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
 
 pip install -e .
-At the end you will see a msg like this:
+
+## Confirmation
+If at the end you see
 Successfully installed ding-1.0
 
-which means you are good to go
+This means you are good to go
 
-All done in 67 seconds ✧｡٩(ˊᗜˋ )و✧*｡
+__All done in 67 seconds ✧｡٩(ˊᗜˋ )و✧*｡.__
