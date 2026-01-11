@@ -15,10 +15,10 @@ cd DING
 ### To Setup a Virtual Environment
 python -m venv venv
 
-# Windows
+#### Windows
 venv\Scripts\activate
 
-# macOS/Linux
+#### macOS/Linux
 source venv/bin/activate
 
 pip install -e .
