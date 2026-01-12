@@ -58,7 +58,9 @@ If you've ever wondered _“What actually happens when I run `git commit`?”_, 
 
 ## Getting Started
 
-Before starting - check out our [CONTRIBUTING.md](https://github.com/opencodeiiita/DING/blob/main/CONTRIBUTING.md) to get a refresher on contribution and general workflow.
+**New to DING?** Start with [SETUP.md](SETUP.md) to install and run DING in minutes.
+
+**Want to contribute?** Check out [CONTRIBUTING.md](https://github.com/opencodeiiita/DING/blob/main/CONTRIBUTING.md) for the workflow and guidelines.
 
 ---
 
